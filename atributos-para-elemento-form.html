@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Atributos para elemento form</title>
+</head>
+<body>
+	<h1>Formularios</h1>
+	<form action="mi_servidor">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<br/><br/>
+
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="apellido" required="">
+			<br/><br/>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<br/><br/>
+
+			<label for="edad">Edad:</label>
+			<input type="number" id="edad" name="edad" autocomplete="off" required>
+			<br/><br/>
+
+			<label>Género:</label>
+			<br/>
+
+			<input type="radio" name="genero" value="femenino" id="femenino">
+			<label for="femenino">Femenino</label>
+			<br/>
+
+			<input type="radio" name="genero" value="masculino" id="masculino">
+			<label for="masculino">Masculino</label>
+			<br/><br/>
+
+			<label>Genero musica favorita</label><br/>
+			<input type="checkbox" name="musica" value="jazz" id="jazz">
+			<label for="jazz">Jazz</label>
+			<br/>
+
+			<input type="checkbox" name="musica" value="rock" id="rock">
+			<label for="rock">Rock</label>
+			<br/>
+
+			<label>Marca auto favorita:</label><br/>
+			<select name="autos">
+				<option value="audi">Audi</option>
+				<option value="bmw">BMW</option>
+				<option value="ferrari">Ferrari</option>
+			</select>
+			<br/><br/>
+
+			<label>Comentario:</label><br/>
+			<textarea cols="30" name="comentario">Este es mi comentario</textarea>
+			<br/><br/>
+
+			<input type="submit" value="enviar">
+			<input type="submit" value="enviar sin validad" formnovalidate="true">
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+table{
+	border-collapse:collapse;
+	width:100%;
+}
+
+th,tr,td{
+	padding:10px;
+}
+
+caption{
+	font-size:25px;
+	color:red;
+}
+
+tr:nth-child(even){
+	background:greenyellow;
+}
+
+tr:nth-child(odd){
+	background:green;
+}
